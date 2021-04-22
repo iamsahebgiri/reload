@@ -1,0 +1,25 @@
+{
+  "name": "reload",
+  "version": "1.0.0",
+  "description": "Yet another modern CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch --output-style expanded src/reload.scss dist/reload.css && node-sass --output-style compressed src/reload.scss dist/reload.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsahebgiri/reload.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Saheb Giri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsahebgiri/reload/issues"
+  },
+  "homepage": "https://github.com/iamsahebgiri/reload#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

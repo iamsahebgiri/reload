@@ -1,0 +1,145 @@
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 0;
+  color: $gray-900;
+  background-color: $gray-100;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.625rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:focus,
+  &:hover {
+    background-color: $gray-200;
+    color: $gray-900;
+    outline: 0;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  &.btn-primary {
+    background-color: $blue-700;
+    color: $white;
+
+    &:focus,
+    &:hover {
+      background-color: $blue-600;
+      outline: 0;
+    }
+
+    &:active,
+    &.active {
+      background-color: $blue-800;
+      color: $white;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+
+      &:focus,
+      &:hover {
+        background-color: $blue-700;
+        outline: 0;
+      }
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $gray-100;
+    color: $gray-900;
+
+    &:focus,
+    &:hover {
+      background-color: $gray-200;
+      outline: 0;
+    }
+
+    &:active,
+    &.active {
+      background-color: $blue-100;
+      color: $blue-600;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+
+      &:focus,
+      &:hover {
+        background-color: $gray-100;
+        outline: 0;
+      }
+    }
+  }
+
+  &.btn-warning {
+    background-color: $yellow-400;
+    color: $gray-900;
+
+    &:focus,
+    &:hover {
+      background-color: $yellow-500;
+      outline: 0;
+    }
+
+    &:active,
+    &.active {
+      background-color: $yellow-600;
+      color: $gray-900;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+
+      &:focus,
+      &:hover {
+        background-color: $yellow-400;
+        outline: 0;
+      }
+    }
+  }
+  
+  &.btn-danger {
+    background-color: $red-500;
+    color: $white;
+
+    &:focus,
+    &:hover {
+      background-color: $red-600;
+      outline: 0;
+    }
+
+    &:active,
+    &.active {
+      background-color: $red-700;
+      color: $white;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+
+      &:focus,
+      &:hover {
+        background-color: $red-500;
+        outline: 0;
+      }
+    }
+  }
+}
