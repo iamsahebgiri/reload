@@ -1,87 +1,87 @@
 // neutrals
-$white: #ffffff;
-$black: #000000;
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
 
 // gray
-$gray-50: #f8fafc;
-$gray-100: #f1f5f9;
-$gray-200: #e2e8f0;
-$gray-300: #cbd5e1;
-$gray-400: #94a3b8;
-$gray-500: #64748b;
-$gray-600: #475569;
-$gray-700: #334155;
-$gray-800: #1e293b;
-$gray-900: #0f172a;
+$gray-50: hsl(210, 40%, 98%);
+$gray-100: hsl(210, 40%, 96%);
+$gray-200: hsl(214, 32%, 91%);
+$gray-300: hsl(213, 27%, 84%);
+$gray-400: hsl(215, 20%, 65%);
+$gray-500: hsl(215, 16%, 47%);
+$gray-600: hsl(215, 19%, 35%);
+$gray-700: hsl(215, 25%, 27%);
+$gray-800: hsl(217, 33%, 17%);
+$gray-900: hsl(222, 47%, 11%);
 
 // red
-$red-50: #fef2f2;
-$red-100: #fee2e2;
-$red-200: #fecaca;
-$red-300: #fca5a5;
-$red-400: #f87171;
-$red-500: #ef4444;
-$red-600: #dc2626;
-$red-700: #b91c1c;
-$red-800: #991b1b;
-$red-900: #7f1d1d;
+$red-50: hsl(0, 86%, 97%);
+$red-100: hsl(0, 93%, 94%);
+$red-200: hsl(0, 96%, 89%);
+$red-300: hsl(0, 94%, 82%);
+$red-400: hsl(0, 91%, 71%);
+$red-500: hsl(0, 84%, 60%);
+$red-600: hsl(0, 72%, 51%);
+$red-700: hsl(0, 74%, 42%);
+$red-800: hsl(0, 70%, 35%);
+$red-900: hsl(0, 63%, 31%);
 
 // green
-$green-50: #f0fdf4;
-$green-100: #dcfce7;
+$green-50: hsl(138, 76%, 97%);
+$green-100: hsl(141, 84%, 93%);
 $green-200: #bbf7d0;
-$green-300: #86efac;
-$green-400: #4ade80;
-$green-500: #22c55e;
-$green-600: #16a34a;
-$green-700: #15803d;
-$green-800: #166534;
-$green-900: #14532d;
+$green-300: hsl(142, 77%, 73%);
+$green-400: hsl(142, 69%, 58%);
+$green-500: hsl(142, 71%, 45%);
+$green-600: hsl(142, 76%, 36%);
+$green-700: hsl(142, 72%, 29%);
+$green-800: hsl(143, 64%, 24%);
+$green-900: hsl(144, 61%, 20%);
 
 // yellow
-$yellow-50: #fefce8;
-$yellow-100: #fef9c3;
-$yellow-200: #fef08a;
-$yellow-300: #fde047;
-$yellow-400: #facc15;
-$yellow-500: #eab308;
-$yellow-600: #ca8a04;
-$yellow-700: #a16207;
-$yellow-800: #854d0e;
-$yellow-900: #713f12;
+$yellow-50: hsl(55, 92%, 95%);
+$yellow-100: hsl(55, 97%, 88%);
+$yellow-200: hsl(53, 98%, 77%);
+$yellow-300: hsl(50, 98%, 64%);
+$yellow-400: hsl(48, 96%, 53%);
+$yellow-500: hsl(45, 93%, 47%);
+$yellow-600: hsl(41, 96%, 40%);
+$yellow-700: hsl(35, 92%, 33%);
+$yellow-800: hsl(32, 81%, 29%);
+$yellow-900: hsl(28, 73%, 26%);
 
 // blue
-$blue-50: #eff6ff;
-$blue-100: #dbeafe;
-$blue-200: #bfdbfe;
-$blue-300: #93c5fd;
-$blue-400: #60a5fa;
-$blue-500: #3b82f6;
-$blue-600: #2563eb;
-$blue-700: #1d4ed8;
-$blue-800: #1e40af;
-$blue-900: #1e3a8a;
+$blue-50: hsl(214, 100%, 97%);
+$blue-100: hsl(214, 95%, 93%);
+$blue-200: hsl(213, 97%, 87%);
+$blue-300: hsl(212, 96%, 78%);
+$blue-400: hsl(213, 94%, 68%);
+$blue-500: hsl(217, 91%, 60%);
+$blue-600: hsl(221, 83%, 53%);
+$blue-700: hsl(224, 76%, 48%);
+$blue-800: hsl(226, 71%, 40%);
+$blue-900: hsl(224, 64%, 33%);
 
 // teal
-$teal-50: #f0fdfa;
-$teal-100: #ccfbf1;
-$teal-200: #99f6e4;
-$teal-300: #5eead4;
-$teal-400: #2dd4bf;
-$teal-500: #14b8a6;
-$teal-600: #0d9488;
-$teal-700: #0f766e;
-$teal-800: #115e59;
-$teal-900: #134e4a;
+$teal-50: hsl(166, 76%, 97%);
+$teal-100: hsl(167, 85%, 89%);
+$teal-200: hsl(168, 84%, 78%);
+$teal-300: hsl(171, 77%, 64%);
+$teal-400: hsl(172, 66%, 50%);
+$teal-500: hsl(173, 80%, 40%);
+$teal-600: hsl(175, 84%, 32%);
+$teal-700: hsl(175, 77%, 26%);
+$teal-800: hsl(176, 69%, 22%);
+$teal-900: hsl(176, 61%, 19%);
 
 // purple
-$purple-50: #faf5ff;
-$purple-100: #f3e8ff;
-$purple-200: #e9d5ff;
-$purple-300: #d8b4fe;
-$purple-400: #c084fc;
-$purple-500: #a855f7;
-$purple-600: #9333ea;
-$purple-700: #7e22ce;
-$purple-800: #6b21a8;
-$purple-900: #581c87;
+$purple-50: hsl(270, 100%, 98%);
+$purple-100: hsl(269, 100%, 95%);
+$purple-200: hsl(269, 100%, 92%);
+$purple-300: hsl(269, 97%, 85%);
+$purple-400: hsl(270, 95%, 75%);
+$purple-500: hsl(271, 91%, 65%);
+$purple-600: hsl(271, 81%, 56%);
+$purple-700: hsl(272, 72%, 47%);
+$purple-800: hsl(273, 67%, 39%);
+$purple-900: hsl(274, 66%, 32%);
