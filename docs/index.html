@@ -93,7 +93,181 @@
       <button class="btn btn-warning">Confirm action</button>
       <button class="btn btn-danger">Delete account</button>
 
-      <button class="btn btn-secondary subtle">Import contacts</button>
+      <br />
+      <br />
+      <button class="btn btn-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <br />
+      <br />
+      <button class="btn btn-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M11 17l-5-5m0 0l5-5m-5 5h12"
+          />
+        </svg>
+      </button>
+      <br />
+      <br />
+      <button class="btn btn-primary btn-block">All right!</button>
+      <button class="btn btn-secondary btn-block">Cancel</button>
+      <br />
+      <br />
+      <a
+        href="http://google.com"
+        class="btn btn-secondary"
+        style="display: inline"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Google</a
+      >
+
+      <button class="btn btn-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          width="16"
+          height="16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"
+          ></path>
+        </svg>
+        Delete account
+      </button>
+    </section>
+
+    <section>
+      <h3>Form</h3>
+
+      <p>Forms are important part of any websites.</p>
+
+      <ul>
+        <li>
+          <input id="c1" type="checkbox" />
+          <label for="c1">Checkbox</label>
+        </li>
+        <li>
+          <input id="c2" type="checkbox" checked />
+          <label for="c2">Checkbox</label>
+        </li>
+        <li>
+          <input id="r1" type="radio" name="radio" value="1" />
+          <label for="r1">Radio</label>
+        </li>
+        <li>
+          <input id="r2" type="radio" name="radio" value="2" checked />
+          <label for="r2">Radio</label>
+        </li>
+        <li>
+          <input id="s1" type="checkbox" class="switch" />
+          <label for="s1">Switch</label>
+        </li>
+        <li>
+          <input id="s2" type="checkbox" class="switch" checked />
+          <label for="s2">Switch</label>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <input id="c1d" type="checkbox" disabled />
+          <label for="c1d">Checkbox</label>
+        </li>
+        <li>
+          <input id="c2d" type="checkbox" checked disabled />
+          <label for="c2d">Checkbox</label>
+        </li>
+        <li>
+          <input id="r1d" type="radio" name="radiod" value="1" disabled />
+          <label for="r1d">Radio</label>
+        </li>
+        <li>
+          <input
+            id="r2d"
+            type="radio"
+            name="radiod"
+            value="2"
+            checked
+            disabled
+          />
+          <label for="r2d">Radio</label>
+        </li>
+        <li>
+          <input id="s1d" type="checkbox" class="switch" disabled />
+          <label for="s1d">Switch</label>
+        </li>
+        <li>
+          <input id="s2d" type="checkbox" class="switch" checked disabled />
+          <label for="s2d">Switch</label>
+        </li>
+      </ul>
+
+      <div class="form-group">
+        <label class="form-label" for="input-example-3">Message</label>
+        <textarea
+          class="form-input"
+          id="input-example-3"
+          placeholder="Textarea"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <!-- form input control -->
+      <div class="form-group">
+        <label class="form-label" for="input-example-1">Name</label>
+        <input
+          class="form-input"
+          type="text"
+          id="input-example-1"
+          placeholder="Name"
+        />
+      </div>
+
+      <form>
+        <label for="name">Name</label>
+        <input class="form-control" type="text" id="name" />
+
+        <label for="email">Email address</label>
+        <input class="form-control" type="email" id="email" />
+
+        <label> <input type="checkbox" /> Remember me </label>
+
+        <label>
+          <input type="radio" id="potato" name="radio-group-example" checked />
+          Potato
+        </label>
+        <label>
+          <input type="radio" id="tomato" name="radio-group-example" /> Tomato
+        </label>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
     </section>
   </body>
 </html>

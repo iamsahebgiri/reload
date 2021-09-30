@@ -4,6 +4,7 @@
   "description": "Yet another modern CSS framework",
   "main": "index.js",
   "scripts": {
+    "lint": "npx stylelint \"src/*.scss\" --syntax scss",
     "sass": "node-sass --watch --output-style expanded src/reload.scss dist/reload.css && node-sass --output-style compressed src/reload.scss dist/reload.min.css"
   },
   "repository": {
@@ -14,12 +15,15 @@
     "css"
   ],
   "author": "Saheb Giri",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iamsahebgiri/reload/issues"
   },
   "homepage": "https://github.com/iamsahebgiri/reload#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
   }
 }

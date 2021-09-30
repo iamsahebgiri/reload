@@ -1,19 +1,18 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: $body-font-size;
 }
 
 body {
-  font-family: "Inter", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: $body-font;
+  font-size: $body-font-size;
+  font-weight: $font-weight-normal;
   letter-spacing: 0.01rem;
-  line-height: 1.6;
+  line-height: $lh-default;
 }

@@ -1,0 +1,109 @@
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: $border-radius-3;
+  box-shadow: none;
+  box-sizing: border-box;
+  height: $size-6;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  -webkit-tap-highlight-color: transparent;
+}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  appearance: none;
+  appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid $blue-600;
+  outline: 0;
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+input[type="checkbox"].switch {
+
+  appearance: none;
+
+  background: linear-gradient(180deg, #2d2f39 0%, #1f2027 100%);
+  border: 2px solid #474755;
+  border-radius: 16px;
+  display: inline-block;
+  height: 32px;
+  margin: 0;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 52px;
+
+  &::after {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    content: "";
+    height: 24px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+    width: 24px;
+  }
+
+  &:checked {
+    border-color: #654fec;
+
+    &::after {
+      transform: translatex(20px);
+    }
+  }
+}
