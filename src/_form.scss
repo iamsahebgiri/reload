@@ -1,3 +1,9 @@
+.form-group {
+  &:not(:last-child) {
+    margin-bottom: $spacer-2;
+  }
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -5,32 +11,64 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
 textarea,
-select {
+select,
+.form-input,
+.form-textarea,
+.form-select,
+.form-multiselect {
+  appearance: none;
   background-color: #fff;
   border: 1px solid $gray-300;
   border-radius: $border-radius-3;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow-sm;
   box-sizing: border-box;
   height: $size-6;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   -webkit-tap-highlight-color: transparent;
+
+  &::placeholder {
+    color: $gray-500;
+    opacity: 1;
+  }
+
+  &::-webkit-datetime-edit,
+  &::-webkit-datetime-edit-year-field,
+  &::-webkit-datetime-edit-month-field,
+  &::-webkit-datetime-edit-day-field,
+  &::-webkit-datetime-edit-hour-field,
+  &::-webkit-datetime-edit-minute-field,
+  &::-webkit-datetime-edit-second-field,
+  &::-webkit-datetime-edit-millisecond-field,
+  &::-webkit-datetime-edit-meridiem-field {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
-/* Removes awkward default styles on some inputs for iOS */
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-  appearance: none;
+select {
+  min-width: 17rem;
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:not([multiple]):not([size]) {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9J25vbmUnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggc3Ryb2tlPScjNkI3MjgwJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMS41JyBkPSdtNiA4IDQgNCA0LTQnLz48L3N2Zz4=);
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 textarea {
-  min-height: 65px;
+  min-height: 4.5rem;
+  min-width: 17rem;
   padding-bottom: 6px;
   padding-top: 6px;
 }
@@ -42,8 +80,17 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
 textarea:focus,
-select:focus {
+select:focus,
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus,
+.form-multiselect:focus {
   border: 1px solid $blue-600;
   box-shadow: 0 0 0 0.1rem $blue-200;
   outline: 0;
@@ -52,22 +99,102 @@ select:focus {
 label,
 legend {
   display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: $spacer-1;
 }
 
+label.form-label {
+  font-weight: $font-weight-semibold;
+}
 fieldset {
   border-width: 0;
   padding: 0;
 }
 
+// Radio and Checkbox
 input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
+input[type="radio"],
+.form-checkbox,
+.form-radio {
+  appearance: none;
+  padding: 0;
+  color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: $blue-600;
+  background-color: #fff;
+  border: 1px solid $gray-300;
+  box-shadow: $shadow-sm;
+  
+  &:focus {
+    outline: 1px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 0.1rem $blue-200;
+    border-color: $blue-600;
+  }
 }
 
-label > .label-body {
-  display: inline-block;
-  font-weight: normal;
-  margin-left: 0.5rem;
+input[type="checkbox"],
+.form-checkbox {
+  border-radius: $border-radius-1;
+}
+
+input[type="radio"],
+.form-radio {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked,
+.form-checkbox:checked,
+.form-radio:checked {
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked,
+.form-checkbox:checked {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+}
+
+input[type="radio"]:checked,
+.form-radio:checked {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='3'/%3E%3C/svg%3E");
+}
+
+input[type="checkbox"]:checked:hover,
+input[type="checkbox"]:checked:focus,
+input[type="radio"]:checked:hover,
+input[type="radio"]:checked:focus,
+.form-checkbox:checked:hover,
+.form-checkbox:checked:focus,
+.form-radio:checked:hover,
+.form-radio:checked:focus {
+  border-color: transparent;
+  background-color: currentColor;
+}
+
+input[type="checkbox"]:indeterminate,
+.form-checkbox:indeterminate {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3E%3C/svg%3E");
+  border-color: transparent;
+  background-color: currentColor;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:indeterminate:hover,
+input[type="checkbox"]:indeterminate:focus,
+.form-checkbox:indeterminate:hover,
+.form-checkbox:indeterminate:focus {
+  border-color: transparent;
+  background-color: currentColor;
 }
