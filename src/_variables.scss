@@ -12,50 +12,43 @@ $font-size-sm: 0.7rem !default;
 $font-size-lg: 0.9rem !default;
 
 // Font weights
-$font-weight-bold: 600 !default;
-$font-weight-semibold: 500 !default;
-$font-weight-normal: 400 !default;
-$font-weight-light: 300 !default;
+$text-bold: 600 !default;
+$text-semibold: 500 !default;
+$text-normal: 400 !default;
+$text-light: 300 !default;
 
-// Heading sizes - desktop
-$h00-size: 48px !default;
-$h0-size: 40px !default;
-$h1-size: 32px !default;
-$h2-size: 24px !default;
-$h3-size: 20px !default;
-$h4-size: 16px !default;
-$h5-size: 14px !default;
-$h6-size: 12px !default;
+// responsive breakpoints
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 640px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1024px !default;
+$breakpoint-2xl: 1440px !default;
 
-// Responsive breakpoints
-$size-xs: 480px !default;
-$size-sm: 600px !default;
-$size-md: 840px !default;
-$size-lg: 960px !default;
-$size-xl: 1280px !default;
-$size-2x: 1440px !default;
+// border radius
+$rounded-none: 0 !default;
+$rounded-sm: 0.125rem !default;
+$rounded: 0.25rem !default;
+$rounded-lg: 0.5rem !default;
+$rounded-full: 9999px !default;
 
-// Border
-$border-width: 1px !default;
-$border-style: solid !default;
-$border: $border-width $border-style var(--color-border-primary) !default;
 
-// Border Radius
-$border-radius-1: 4px !default;
-$border-radius-2: 6px !default;
-$border-radius-3: 8px !default;
-$border-radius: $border-radius-2 !default;
+// spacing scale
 
-$spacer: 8px !default;
+$spacer: 0.25rem !default;
+$spacer-none: 0 !default;
+$spacer-1: $spacer * 2 !default; // 8px
+$spacer-2: $spacer * 3 !default; // 12px
+$spacer-3: $spacer * 4 !default; // 16px
+$spacer-4: $spacer * 6 !default; // 24px
+$spacer-5: $spacer * 8 !default; // 32px
+$spacer-6: $spacer * 12 !default; // 48px
 
-// Our spacing scale
-$spacer-0: 0 !default; // 0
-$spacer-1: round($spacer / 2) !default; // 4px
-$spacer-2: $spacer !default; // 8px
-$spacer-3: $spacer * 2 !default; // 16px
-$spacer-4: $spacer * 3 !default; // 24px
-$spacer-5: $spacer * 4 !default; // 32px
-$spacer-6: $spacer * 5 !default; // 40px
+// sm: '8px',
+// md: '12px',
+// lg: '16px',
+// xl: '24px',
+
 
 // Line heights
 $lh-condensed-ultra: 1 !default;
