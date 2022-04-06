@@ -13,15 +13,13 @@ button {
   -webkit-tap-highlight-color: transparent;
   text-align: center;
   text-decoration: none;
-  transform: scale(1);
   transition: 100ms cubic-bezier(0.3, 0, 0.5, 1);
-  transition-property: color, background-color, border-color, transform;
+  transition-property: color, background-color, transform;
+  will-change: transform;
   white-space: nowrap;
 
   svg {
-    height: 1rem;
     vertical-align: middle;
-    width: 1rem;
   }
 
   &:hover {
@@ -31,8 +29,7 @@ button {
 
   &:active,
   &.active {
-    background-color: $blue-100;
-    color: $blue-600;
+    background-color: $gray-300;
     transform: scale(0.98);
   }
 
@@ -156,9 +153,9 @@ button {
     padding: 0.6rem;
 
     svg {
-      height: $size-3;
+      height: $unit-6;
       margin-right: 0;
-      width: $size-3;
+      width: $unit-6;
     }
 
     &:hover {
@@ -172,9 +169,6 @@ button {
     }
   }
 
-  // Full-width button
-  //
-  // These buttons expand to the full width of their parent container
   &.btn-block {
     display: block;
     text-align: center;

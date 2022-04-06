@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx stylelint \"src/*.scss\"",
+    "minify": "node-sass --output-style compressed src/reload.scss dist/reload.min.css",
     "sass": "node-sass --watch --output-style expanded src/reload.scss dist/reload.css && node-sass --output-style compressed src/reload.scss dist/reload.min.css"
   },
   "repository": {

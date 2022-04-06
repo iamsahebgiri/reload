@@ -13,14 +13,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: $body-font-size;
 }
 
 body {
-  font-family: $body-font;
-  font-size: $body-font-size;
-  font-weight: $text-normal;
+  font-family: $font-sans;
+  font-size: $text-base;
+  font-weight: $font-normal;
   letter-spacing: 0.01rem;
-  line-height: $lh-default;
+  line-height: $lh-normal;
   background-color: $gray-50;
 }

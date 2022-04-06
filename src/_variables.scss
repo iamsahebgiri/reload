@@ -1,31 +1,33 @@
 // Font stacks
-$body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+$font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !default;
 
 // Monospace font stack
-$mono-font: "Roboto Mono", Consolas, "Liberation Mono", Menlo, monospace !default;
+$font-mono: "Roboto Mono", Consolas, "Liberation Mono", Menlo, monospace !default;
 
 // Font sizes
-$body-font-size: 16px !default;
-$font-size: 0.8rem !default;
-$font-size-sm: 0.7rem !default;
-$font-size-lg: 0.9rem !default;
+$text-sm: 0.75rem !default;
+$text-sm: 0.875rem !default;
+$text-base: 1rem !default;
+$text-lg: 1.125rem !default;
+$text-xl: 1.25rem !default;
+$text-xl: 1.5rem !default;
 
 // Font weights
-$text-bold: 600 !default;
-$text-semibold: 500 !default;
-$text-normal: 400 !default;
-$text-light: 300 !default;
+$font-bold: 600 !default;
+$font-semibold: 500 !default;
+$font-normal: 400 !default;
+$font-light: 300 !default;
 
-// responsive breakpoints
-$breakpoint-xs: 480px !default;
-$breakpoint-sm: 640px !default;
-$breakpoint-md: 768px !default;
-$breakpoint-lg: 1024px !default;
-$breakpoint-xl: 1024px !default;
-$breakpoint-2xl: 1440px !default;
+// Responsive breakpoints
+$breakpoint-xs: 30rem !default; // 480px
+$breakpoint-sm: 40rem !default; // 640px
+$breakpoint-md: 48rem !default; // 768px
+$breakpoint-lg: 64rem !default; // 1024px
+$breakpoint-xl: 80rem !default; // 1280px
+$breakpoint-2xl:  90rem !default; // 1440px
 
-// border radius
+// Border radius
 $rounded-none: 0 !default;
 $rounded-sm: 0.125rem !default;
 $rounded: 0.25rem !default;
@@ -33,42 +35,36 @@ $rounded-lg: 0.5rem !default;
 $rounded-full: 9999px !default;
 
 
-// spacing scale
-
-$spacer: 0.25rem !default;
-$spacer-none: 0 !default;
-$spacer-1: $spacer * 2 !default; // 8px
-$spacer-2: $spacer * 3 !default; // 12px
-$spacer-3: $spacer * 4 !default; // 16px
-$spacer-4: $spacer * 6 !default; // 24px
-$spacer-5: $spacer * 8 !default; // 32px
-$spacer-6: $spacer * 12 !default; // 48px
-
-// sm: '8px',
-// md: '12px',
-// lg: '16px',
-// xl: '24px',
+// Unit scale
+$unit: 0.25rem !default;
+$unit-none: 0 !default;
+$unit-1: $unit !default; // 4px
+$unit-2: $unit * 2 !default; // 8px
+$unit-3: $unit * 3 !default; // 12px
+$unit-4: $unit * 4 !default; // 16px
+$unit-5: $unit * 5 !default; // 20px
+$unit-6: $unit * 6 !default; // 24px
+$unit-7: $unit * 7 !default; // 28px
+$unit-8: $unit * 8 !default; // 32px
+$unit-9: $unit * 9 !default; // 36px
+$unit-10: $unit * 10 !default; // 40px
+$unit-11: $unit * 11 !default; // 44px
+$unit-12: $unit * 12 !default; // 48px
+$unit-14: $unit * 14 !default; // 56px
+$unit-16: $unit * 16 !default; // 64px
+$unit-20: $unit * 20 !default; // 80px
 
 
 // Line heights
-$lh-condensed-ultra: 1 !default;
-$lh-condensed: 1.25 !default;
-$lh-default: 1.5 !default;
+$lh-none: 1 !default;
+$lh-tight: 1.25 !default;
+$lh-snug: 1.375 !default;
+$lh-normal: 1.5 !default;
+$lh-relaxed: 1.625 !default;
+$lh-loose: 2 !default;
 
-// Size scale
-// Used for buttons, inputs, labels, avatars etc.
-$size: 16px !default;
 
-$size-0: 0 !default;
-$size-1: $size !default; // 16px
-$size-2: $size-1 + 4px !default; // 20px
-$size-3: $size-2 + 4px !default; // 24px
-$size-4: $size-3 + 4px !default; // 28px
-$size-5: $size-4 + 4px !default; // 32px
-$size-6: $size-5 + 8px !default; // 40px
-$size-7: $size-6 + 8px !default; // 48px
-$size-8: $size-7 + 16px !default; // 64px
-
+// Shadows
 $shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 $shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 $shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);

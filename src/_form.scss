@@ -1,6 +1,6 @@
 .form-group {
   &:not(:last-child) {
-    margin-bottom: $spacer-2;
+    margin-bottom: $unit-2;
   }
 }
 
@@ -28,7 +28,7 @@ select,
   border-radius: $rounded-lg;
   box-shadow: $shadow-sm;
   box-sizing: border-box;
-  height: $size-6;
+  height: $unit-10;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   -webkit-tap-highlight-color: transparent;
 }
@@ -86,11 +86,11 @@ select:focus,
 label,
 legend {
   display: block;
-  margin-bottom: $spacer-1;
+  margin-bottom: $unit-1;
 }
 
 label.form-label {
-  font-weight: $text-semibold;
+  font-weight: $font-semibold;
 }
 fieldset {
   border-width: 0;

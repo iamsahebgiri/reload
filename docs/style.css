@@ -14,6 +14,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
+
 header {
   height: 6rem;
   display: flex;
@@ -28,6 +29,7 @@ header div {
 main div {
   padding: 4rem 0;
   border-radius: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
   background-color: hsl(210, 40%, 96%);
   display: flex;
@@ -44,4 +46,22 @@ main div p {
   max-width: 42ch;
   font-size: 1.1rem;
   color: hsl(215, 19%, 35%);
+}
+
+.btn-custom {
+  background: linear-gradient(to right top, rgb(12, 42, 56), rgb(19, 67, 97));
+  color: white;
+  box-shadow: var(--shadow-md);
+  line-height: 30px;
+  font-size: 21px;
+  font-weight: 600;
+  border-radius: 0.75rem;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+
+.btn-custom:active {
+  transform: scale(1.02);
 }
