@@ -174,4 +174,17 @@ button {
     text-align: center;
     width: 100%;
   }
+
+  &.btn-link {
+    background: transparent;
+    border-color: transparent;
+    color: $gray-600;
+
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+      color: $blue-600;
+    }
+  }
 }
