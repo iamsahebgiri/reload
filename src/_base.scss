@@ -5,10 +5,19 @@
 }
 
 :root {
+
+  --color-primary-lighter: #{$blue-200};
+  --color-primary-light: #{$blue-500};
+  --color-primary: #{$blue-600};
+  --color-primary-dark: #{$blue-700};
+  --color-primary-darker: #{$blue-800};
+
   --shadow-sm: #{$shadow-sm};
   --shadow: #{$shadow};
   --shadow-md: #{$shadow-md};
   --shadow-lg: #{$shadow-lg};
+  --shadow-xl: #{$shadow-xl};
+  --shadow-2xl: #{$shadow-2xl};
 }
 
 html {

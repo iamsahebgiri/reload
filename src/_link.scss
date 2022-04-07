@@ -1,0 +1,16 @@
+a {
+  color: $gray-800;
+  outline: none;
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: var(--color-primary);
+  }
+
+  &:visited {
+    color: $gray-400;
+  }
+}

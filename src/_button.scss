@@ -44,17 +44,17 @@ button {
   }
 
   &.btn-primary {
-    background-color: $blue-600;
+    background-color: var(--color-primary);
     color: $white;
 
     &:hover {
-      background-color: $blue-700;
+      background-color: var(--color-primary-dark);
       outline: 0;
     }
 
     &:active,
     &.active {
-      background-color: $blue-800;
+      background-color: var(--color-primary-darker);
       color: $white;
     }
 
@@ -63,7 +63,7 @@ button {
       opacity: 0.5;
 
       &:hover {
-        background-color: $blue-700;
+        background-color: var(--color-primary-dark);
         outline: 0;
       }
     }
@@ -184,7 +184,7 @@ button {
     &:hover,
     &:active,
     &.active {
-      color: $blue-600;
+      color: var(--color-primary);
     }
   }
 }
